@@ -1,0 +1,7 @@
+How git pull works under the hood.
+    
+    Under the hood git pull is actually running two separate commands:
+    git fetch which checks for any changes in the remote since the last fetch,
+    and either git merge or git rebase , depending on how the command is configured,
+    which then merges/rebases these changes into your local branch.
+
