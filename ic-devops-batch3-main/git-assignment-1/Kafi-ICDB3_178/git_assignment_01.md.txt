@@ -1,5 +1,8 @@
+<<<<<<< main
 Working Log
 
+=======
+>>>>>>> master
 kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps$ mkdir git-assignment-01
 kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps$ ls
 git-assignment-01 
