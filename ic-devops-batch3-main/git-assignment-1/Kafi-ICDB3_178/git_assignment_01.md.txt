@@ -1,0 +1,170 @@
+Working Log
+
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps$ mkdir git-assignment-01
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps$ ls
+git-assignment-01 
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps$ cd git-assignment-01
+
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/kafi-abdulla/DevSecOps/git-assignment-01/.git/
+
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git remote
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git remote add origin git@github.com:kafi97/git-assignment-01.git
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git remote -v
+origin git@github.com:kafi97/git-assignment-01.git (fetch)
+origin git@github.com:kafi97/git-assignment-01.git (push)
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git pull origin
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 24 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (24/24), 741.07 KiB | 410.00 KiB/s, done.
+From github.com:kafi97/git-assignment-01
+ * [new branch]      main       -> origin/main
+ * [new branch]      master     -> origin/master
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ ls
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status master
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git pull origin master
+From github.com:kafi97/git-assignment-01
+ * branch            master     -> FETCH_HEAD
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ ls
+ic-devops-batch3-main
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ cd ic-devops-batch3-main/
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main$ ls
+git-assignment-1  README.md
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main$ cd git-assignment-1/
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1$ ls
+assignment_instruction.txt  Kafi-ICDB3_178
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1$  cd Kafi-ICDB3_178/
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1/Kafi-ICDB3_178$ ls
+git_assignment_01.md.txt  README.md.txt  screenshots
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1/Kafi-ICDB3_178$ cd ..
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1$ cd ..
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main$ cd ..
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch master
+nothing to commit, working tree clean
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git checkout -b PR
+Switched to a new branch 'PR'
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch PR
+nothing to commit, working tree clean
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git log
+commit 9314822eada04101078baa5f8d60c831abf2137c (HEAD -> PR, origin/master, origin/main, master)
+Author: kafi97 <kafibd97@gmail.com>
+Date:   Thu Nov 14 21:30:21 2024 +0600
+
+    Initially upload folders and file
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch PR
+nothing to commit, working tree clean
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ touch PR.txt
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch PR
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+PR.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ ls
+ic-devops-batch3-main  PR.txt
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ vim PR.txt
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ cat PR.txt
+How git pull works under the hood.
+   
+    Under the hood git pull is actually running two separate commands:
+    git fetch which checks for any changes in the remote since the last fetch,
+    and either git merge or git rebase , depending on how the command is configured,
+    which then merges/rebases these changes into your local branch.
+
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git add .
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git commit -m "Create PR.txt with description of how git pull works under the hood"
+[PR 03deba4] Create PR.txt with description of how git pull works under the hood
+ 1 file changed, 7 insertions(+)
+ create mode 100644 PR.txt
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch PR
+nothing to commit, working tree clean
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git log
+commit 03deba479659d7754f4d19b6a939039f049d2e57 (HEAD -> PR)
+Author: kafi97 <kafibd97@gmail.com>
+Date:   Thu Nov 14 21:55:08 2024 +0600
+
+    Create PR.txt with description of how git pull works under the hood
+
+commit 9314822eada04101078baa5f8d60c831abf2137c (origin/master, origin/main, master)
+Author: kafi97 <kafibd97@gmail.com>
+Date:   Thu Nov 14 21:30:21 2024 +0600
+
+    Initially upload folders and file
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git push origin PR
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 521 bytes | 260.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'PR' on GitHub by visiting:
+remote:      https://github.com/kafi97/git-assignment-01/pull/new/PR
+remote:
+To github.com:kafi97/git-assignment-01.git
+ * [new branch]      PR -> PR
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git status
+On branch PR
+nothing to commit, working tree clean
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ git checkout main
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ ls
+ic-devops-batch3-main
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01$ cd ic-devops-batch3-main/
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main$ ls
+git-assignment-1  README.md
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main$ cd git-assignment-1/
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1$ ls
+assignment_instruction.txt  Kafi-ICDB3_178
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1$ cd Kafi-ICDB3_178/
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1/Kafi-ICDB3_178$ ls
+git_assignment_01.md.txt  README.md.txt  screenshots
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1/Kafi-ICDB3_178$ cat README.md.txt
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1/Kafi-ICDB3_178$ ^C
+kafi-abdulla@kafi-abdulla-Virtual-Machine:~/DevSecOps/git-assignment-01/ic-devops-batch3-main/git-assignment-1/Kafi-ICDB3_178$
